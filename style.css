@@ -21,8 +21,7 @@ h1 {
   display: flex;
   margin-top: 2.5rem;
   justify-content: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+  font-family: "Merriweather", serif;
   color: #2a3c8a;
 }
 div#listaCriada {
@@ -50,19 +49,38 @@ li {
 .nomeTarefa {
   margin-top: -1.8rem;
   margin-right: 2.5rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /* font-family: "Courier New", Courier, monospace; */
+  font-family: "Merriweather", serif;
   font-weight: bold;
   font-size: 1.5rem;
   color: #2a3c8a;
   padding-top: 1.5rem;
 }
 
-.bi {
+.btnCampo {
   float: right;
 }
-
+.bi-check-square-fill {
+  font-size: 1.5rem;
+  color: rgb(10, 177, 46);
+  padding: 1rem;
+}
 .bi-x-square-fill {
   font-size: 1.5rem;
   color: rgb(184, 70, 70);
+}
+
+/*Responsivo*/
+
+@media (max-width: 480px) {
+  input#tarefa {
+    width: 100%;
+  }
+
+  button#adiciona {
+    width: 100%;
+  }
+
+  .nomeTarefa {
+    font-size: 1rem;
+  }
 }
